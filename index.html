@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tetris</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div id="container">
+        <h1 id='heading'>Tetris</h1>
+        <div id='tetris'>
+            <canvas id='gameBoard'></canvas>
+
+            <div id='information'>
+                <canvas id='nextTetromino'></canvas>
+                <div class='stats'>
+                    <div class='statsElement'>Score: <span id='score'>0</span></div>
+                    <div class='statsElement'>Level: <span id='level'>0</span></div>
+                    <div class='statsElement'>Rows: <span id='rows'>0</span></div>
+                </div>
+        
+                <div class='stats' id='gameStatus'>Press Start to continue</div>
+                <button onclick='startPause()'>Start/Pause</button>
+            </div>
+        </div>
+        <div id='footer'>
+            <p>Designed and coded by</p>
+            <a rel='noopener noreferrer' target='_blank' href='https://atiyahaider.github.io/Portfolio/'>Atiya Haider</a>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="constants.js"></script>
+    <script type="text/javascript" src="canvas.js"></script>
+    <script type="text/javascript" src="board.js"></script>
+    <script type="text/javascript" src="tetromino.js"></script>
+    <script type="text/javascript" src="gameStats.js"></script>
+    <script type="text/javascript" src="tetris.js"></script>
+  </body>
+</html>
